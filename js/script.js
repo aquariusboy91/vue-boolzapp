@@ -99,6 +99,7 @@ contacts: [
     el: '#app',
     data: {
       io_image: "avatar_io.jpg",
-      image_chat: "avatar_3.jpg"
+      image_chat: "avatar_3.jpg",
+      bgchat: {backgroundImage: "url(mine.jpg)"}
     }
   })

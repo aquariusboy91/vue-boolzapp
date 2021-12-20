@@ -5,25 +5,24 @@
 }
 
 body {
-    background-color: #DCDBD1;
+    background-color: #c9c8bf;
 }
 
 .container {
     display: flex;
     width: 50%;
-    height: 650px;
-    background-color: coral;
+    height: 600px;
     margin:auto;
     margin-top: 2em;
 }
 
 .contact-container {
     width: 40%;
-    background-color: blue;
+    background-color: white;
+    height: 650px;
 }
 
 .chat-container {
-    background-color: red;
     width:60%
 }
 
@@ -99,4 +98,13 @@ body {
 
 .track-user-style {
     color:gray
+}
+
+.chat-bg {
+    background-repeat: no-repeat;
+}
+
+.main-chat {
+    height: 100%;
+    background-size: 100%;
 }
