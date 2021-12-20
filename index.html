@@ -34,9 +34,13 @@
                         <span class="span-not-link"><a href="">Attiva notifiche desktop</a></span>
                     </div>
                 </div>
+                <div class="input-div">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" class="input-bar-search">
+                </div>
                 <div>
                     <ul>
                         <li v-for="contact in contacts" class="lista-nomi">
+                            <div :src="contact.avatar"></div>
                             {{contact.name}}
                         </li>
                     </ul>
@@ -79,7 +83,7 @@
             </div>
             <div class="footer-chat">
                 <a href=""><i class="far fa-smile icon-style"></i></a>
-                <input type="text" class="input-bar">
+                <input type="text" class="input-bar" placeholder="Scrivi un messaggio">
                 <a href=""><i class="fas fa-microphone icon-style" ></i></a>
             </div>
             <div></div>

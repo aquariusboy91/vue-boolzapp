@@ -120,14 +120,15 @@ body {
 }
 
 .input-bar {
-    height: 1.5em;
+    height: 2.5em;
     width: 75%;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
     border:none;
     border-radius: 3px;
     color: black;
     outline: none;
+    padding-left: 1em;
+    font-size: x-small;
+
 }
 
 .contact-message {
@@ -199,4 +200,26 @@ body {
 .notification-link {
     display: flex;
     flex-direction: column;
+}
+
+.input-bar-search {
+    height: 2.5em;
+    width: 95%;
+    border:none;
+    border-radius: 3px;
+    color: black;
+    outline: none;
+    font-size: x-small;
+    padding-left: 1em;
+    border:0.1px solid rgb(238, 238, 238);
+
+}
+
+.input-div {
+    background-color: #FAFAFA;
+    height: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

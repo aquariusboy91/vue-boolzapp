@@ -18,7 +18,7 @@
       contacts: [
         {
           name: "Michele",
-          avatar: "_1",
+          avatar: "avatar_1.jpg",
           visible: true,
           messages: [
             {
@@ -40,7 +40,7 @@
         },
         {
           name: "Fabio",
-          avatar: "_2",
+          avatar: "avatar_2.jpg",
           visible: true,
           messages: [
             {
@@ -63,7 +63,7 @@
       
         {
           name: "Samuele",
-          avatar: "_3",
+          avatar: "avatar_3.jpg",
           visible: true,
           messages: [
             {
@@ -85,7 +85,7 @@
         },
         {
           name: "Luisa",
-          avatar: "_4",
+          avatar: "avatar_4.jpg",
           visible: true,
           messages: [
             {
