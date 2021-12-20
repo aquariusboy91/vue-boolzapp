@@ -38,10 +38,10 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat" class="input-bar-search">
                 </div>
                 <div>
-                    <ul>
+                    <ul class="contacts-list">
                         <li v-for="contact in contacts" class="lista-nomi">
                             <img :src="contact.avatar" class="io-style"></img>
-                            {{contact.name}}
+                            <span class="name-list">{{contact.name}}</span>
                         </li>
                     </ul>
                 </div>

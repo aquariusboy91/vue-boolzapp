@@ -165,6 +165,20 @@ body {
 
 .lista-nomi {
     list-style-type: none;
+    height: 3em;
+    border-bottom: 0.2px solid rgb(238, 238, 238) ;
+    margin-top: 0.5em;
+}
+
+.contacts-list {
+    margin-top: 0.5em;
+    margin-left:0.5em;
+}
+
+.name-list {
+    vertical-align: 1.4em;
+    font-size: small;
+    font-weight: bold;
 }
 
 .notifications {
