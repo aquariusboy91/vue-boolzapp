@@ -26,7 +26,22 @@
                     <a href=""><i class="fas fa-ellipsis-v icon-style"></i></a>
                 </div>
             </div>
-            <div class="main-contact"></div>
+            <div class="main-contact">
+                <div class="notifications">
+                    <div class="not-bell"><i class="fas fa-bell-slash"></i></div>
+                    <div class="notification-link">
+                        <span class="span-not">Ricevi notifiche di nuovi messaggi</span>
+                        <span class="span-not-link"><a href="">Attiva notifiche desktop</a></span>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li v-for="contact in contacts" class="lista-nomi">
+                            {{contact.name}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <!-- container sezione chat -->
