@@ -94,3 +94,11 @@ contacts: [
       ],
     },
   ];
+
+  var app = new Vue({
+    el: '#app',
+    data: {
+      io_image: "avatar_io.jpg",
+      image_chat: "avatar_3.jpg"
+    }
+  })

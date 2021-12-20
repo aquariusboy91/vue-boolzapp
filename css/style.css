@@ -3,3 +3,100 @@
     margin:0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #DCDBD1;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    height: 650px;
+    background-color: coral;
+    margin:auto;
+    margin-top: 2em;
+}
+
+.contact-container {
+    width: 40%;
+    background-color: blue;
+}
+
+.chat-container {
+    background-color: red;
+    width:60%
+}
+
+.header-contact {
+    height: 3em;
+    background-color: #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 0.5px solid #B1B1B1 ;
+}
+
+.header-chat {
+    background-color: #EAEAEA;
+    height: 3em;
+}
+
+.io-style {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.user-name {
+    color: black;
+    font-weight: bold;
+    font-size: small;
+    margin-left: 0.2em;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+.icon-style {
+    margin-right: 0.5em;
+    color: #B1B1B1;
+    font-size: small;
+}
+
+.info-contact {
+    display: inline;
+    font-size: small;
+}
+
+.track-user {
+    display: block;
+}
+
+.contact-icon {
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right:0.2em;
+}
+
+.chat-header-contact {
+    display: flex;
+    align-items: center;
+}
+
+.header-chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-name {
+    color:black;
+    font-weight: bold;
+}
+
+.track-user-style {
+    color:gray
+}

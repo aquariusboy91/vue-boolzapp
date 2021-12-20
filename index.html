@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Whatsapp web</title>
 </head>
 <body>
+    <!-- container principale -->
+    <div id="app" class="container">
+
+        <!-- container sezione contatti -->
+        <div class="contact-container">
+            <div class="header-contact">
+                <div class="user-container">
+                    <img :src="io_image" alt="" class="io-style">
+                    <span class="user-name">Nome utente</span>
+                </div>
+                <div class="user-icon">
+                    <a href=""><i class="fas fa-circle-notch icon-style"></i></a>
+                    <a href=""><i class="fas fa-comment-alt icon-style"></i></a>
+                    <a href=""><i class="fas fa-ellipsis-v icon-style"></i></a>
+                </div>
+            </div>
+            <div class="main-contact"></div>
+        </div>
+
+        <!-- container sezione chat -->
+        <div class="chat-container">
+            <div class="header-chat">
+                <div class="chat-header-contact">
+                    <div class="contact-icon">
+                        <img :src="image_chat" alt="" class="io-style">
+                    </div>
+                    <div class="info-contact">
+                        <span class="contact-name">Samuele</span><br>
+                        <span class="track-user-style">Ultimo accesso oggi 28/03/2020 alle 16:55:12</span>
+                    </div>
+                </div>
+                <div class="icon-header-chat">
+                    <a href=""><i class="fas fa-search icon-style"></i></a>
+                    <a href=""><i class="fas fa-paperclip icon-style"></i></a>
+                    <a href=""><i class="fas fa-ellipsis-v icon-style"></i></a>
+                </div>
+            </div>
+            <div class="main-chat"></div>
+            <div></div>
+        </div>
+       
+      </div>
     <script src="js/script.js"></script>
 </body>
 </html>
