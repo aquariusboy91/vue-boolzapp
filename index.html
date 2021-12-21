@@ -56,7 +56,7 @@
                         <img :src="image_chat" alt="" class="io-style">
                     </div>
                     <div class="info-contact">
-                        <span class="contact-name">{{indexA}}</span><br>
+                        <span class="contact-name">{{contacts[indexA].name}}</span><br>
                         <span class="track-user-style">Ultimo accesso oggi 20/12/2021 alle 16:55:12</span>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="main-chat" :style="bgchat" class="chat-bg">
-                <div class="received">
+                <!-- <div class="received">
                     <span class="span-contact">Ciao bella</span>
                     <span class="span-data">20/12/2021 16:54:22</span>
                 </div>
@@ -78,14 +78,14 @@
                 <div class="received">
                     <span class="span-contact">Scusa ciao</span>
                     <span class="span-data">20/12/2021 16:54:22</span>
-                </div>
-                <!-- <div v-for="(message, index) in contacts[index].messages">
-                   {{contacts[index].messages}}
-
-                
-                    
-
                 </div> -->
+                
+                <div v-for="message in contacts[indexA].messages">
+                     <div :class="( message.status == 'sent') ? 'sent' : 'received'">
+                         <span class="span-contact">{{message.text}}</span>
+                         <span class="span-data">{{message.date}}</span>
+                        </div>
+                </div>
                
 
 

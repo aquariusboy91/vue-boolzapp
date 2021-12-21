@@ -132,8 +132,8 @@ body {
 }
 
 .received {
-    width: 12em;
-    height: 2.5em;
+    width: 14em;
+    height: 3.5em;
     background-color: white;
     margin-left: 4em;
     border-radius: 5px;
@@ -142,8 +142,8 @@ body {
 }
 
 .sent {
-    width: 12em;
-    height: 2.5em;
+    width: 14em;
+    height: 3.5em;
     background-color: #D5F9BA;
     margin-left: 19em;
     border-radius: 5px;
