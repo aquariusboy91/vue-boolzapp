@@ -7,6 +7,14 @@
 //  contatti: tramite la direttiva v-for, 
 //  visualizzare nome e immagine di ogni contatto
 
+// Milestone 2
+// Visualizzazione dinamica 
+// dei messaggi: tramite la direttiva v-for, 
+// visualizzare tutti i messaggi relativi al
+//  contatto attivo all’interno del pannello 
+//  della conversazione
+// Click sul contatto mostra
+//  la conversazione del contatto cliccato
 
 
   var app = new Vue({
@@ -15,6 +23,7 @@
       io_image: "avatar_io.jpg",
       image_chat: "avatar_3.jpg",
       bgchat: {backgroundImage: "url(mine.jpg)"},
+      index: '',
       contacts: [
         {
           name: "Michele",
@@ -101,5 +110,10 @@
           ],
         },
       ]
+    },
+    methods:{
+      activeContact: function(index) {
+        console.log(this.contacts[index].name)
+      } 
     }
   })

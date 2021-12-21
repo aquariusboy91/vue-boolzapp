@@ -131,7 +131,7 @@ body {
 
 }
 
-.contact-message {
+.received {
     width: 12em;
     height: 2.5em;
     background-color: white;
@@ -141,7 +141,7 @@ body {
     margin-top: 1em;
 }
 
-.user-message {
+.sent {
     width: 12em;
     height: 2.5em;
     background-color: #D5F9BA;
