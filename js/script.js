@@ -23,7 +23,7 @@
       io_image: "avatar_io.jpg",
       image_chat: "avatar_3.jpg",
       bgchat: {backgroundImage: "url(mine.jpg)"},
-      index: '',
+      indexA: '',
       contacts: [
         {
           name: "Michele",
@@ -113,7 +113,9 @@
     },
     methods:{
       activeContact: function(index) {
-        console.log(this.contacts[index].name)
-      } 
+        indexA = this.contacts[index].name;
+        console.log(indexA);
+        return indexA
+      }
     }
   })
