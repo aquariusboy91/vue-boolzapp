@@ -127,14 +127,15 @@
         this.indexA = index;
         console.log(this.indexA);
       },
-      submit: function () {
-      console.log(this.textInput)
-      this.contacts[this.indexA].messages.push({text : this.textInput,
-      status:"sent"});
-      this.contacts[this.indexA].messages.push({text : "ok",
+      timeoutAnswer: function () { 
+        this.contacts[this.indexA].messages.push({text : "ok",
         status:"received"});
-      
-
+    },
+      submit: function () {
+        console.log(this.textInput)
+        this.contacts[this.indexA].messages.push({text : this.textInput,
+        status:"sent"});
+        setTimeout(function () { this.timeoutAnswer() }.bind(this), 1000)
         
     }
     }
