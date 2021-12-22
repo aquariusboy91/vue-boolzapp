@@ -132,35 +132,44 @@ body {
 }
 
 .received {
-    width: 14em;
-    height: 3.5em;
+    width: 45%;
+    height: 4.5em;
     background-color: white;
-    margin-left: 4em;
+    margin-left: 1em;
     border-radius: 5px;
     font-size: small;
     margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sent {
-    width: 14em;
-    height: 3.5em;
+    width: 45%;
+    height: 4.5em;
     background-color: #D5F9BA;
-    margin-left: 19em;
     border-radius: 5px;
     font-size: small;
+    margin-top: 1em;
+    align-self: flex-end;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .span-contact {
     padding-left: 0.5em;
     font-weight: bold;
     margin-top: 0.5em;
-    vertical-align: -0.6em;
 }
 
 .span-data {
-    padding-left: 8.5em;
+    padding-left: 12.5em;
     font-size: xx-small;
-    vertical-align: 1.2em;
+    vertical-align: -0.7em;
+    align-self: flex-end;
+    padding-right: 1%;
 }
 
 .lista-nomi {
@@ -236,4 +245,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex-chat {
+    display: flex;
+    flex-direction: column;
+    
 }
