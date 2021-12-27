@@ -35,11 +35,11 @@
                     </div>
                 </div>
                 <div class="input-div">
-                    <input type="text" placeholder="Cerca o inizia una nuova chat" class="input-bar-search">
+                    <input v-on:keyup="nameSearch" v-model ="search" type="text" placeholder="Cerca o inizia una nuova chat" class="input-bar-search">
                 </div>
                 <div>
                     <ul class="contacts-list">
-                        <li v-for="(contact,index) in contacts" class="lista-nomi" @click="activeContact(index)">
+                        <li v-if="contact.visible == true" v-for="(contact,index) in contacts" class="lista-nomi" @click="activeContact(index)">
                             <img :src="contact.avatar" class="io-style"></img>
                             <span class="name-list">{{contact.name}}</span>
                         </li>

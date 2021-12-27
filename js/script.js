@@ -25,6 +25,14 @@
 // di un messaggio, l’utente riceverà un “ok” come 
 // risposta, che apparirà dopo 1 secondo.
 
+// Milestone 4
+// Ricerca utenti: scrivendo qualcosa nell’input
+//  a sinistra, vengono visualizzati solo i contatti
+//   il cui nome contiene le lettere inserite (es, Marco, 
+//     Matteo Martina -> Scrivo “mar” rimangono solo 
+//     Marco e Martina)
+
+
 
 
   var app = new Vue({
@@ -35,6 +43,7 @@
       bgchat: {backgroundImage: "url(mine.jpg)"},
       indexA: 0,
       textInput: '',
+      search: '',
       contacts: [
         {
           name: "Michele",
@@ -137,6 +146,19 @@
         status:"sent"});
         setTimeout(function () { this.timeoutAnswer() }.bind(this), 1000)
         
-    }
+    },
+      nameSearch: function () {
+      console.log(this.search)
+      this.contacts.forEach(element=> {
+        console.log(element.name)
+        if(element.name.toLowerCase().includes(this.search.toLowerCase())) {
+          element.visible = true;
+          
+        } else {
+          element.visible = false;
+        }
+      });
+  }
+
     }
   })
