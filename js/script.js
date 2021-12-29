@@ -33,6 +33,10 @@
 //     Marco e Martina)
 
 
+// Cancella messaggio: cliccando sul messaggio appare un 
+// menu a tendina che permette di cancellare 
+// il messaggio selezionato
+
 
 
   var app = new Vue({
@@ -42,8 +46,10 @@
       image_chat: "avatar_3.jpg",
       bgchat: {backgroundImage: "url(mine.jpg)"},
       indexA: 0,
+      indexB: '',
       textInput: '',
       search: '',
+      drop_visible: false,
       contacts: [
         {
           name: "Michele",
@@ -158,7 +164,12 @@
           element.visible = false;
         }
       });
-  }
+  },
+    dropdown: function(index){
+      this.indexB = index;
+      console.log(this.indexB)
+      this.drop_visible= !this.drop_visible;
+    }
 
     }
   })

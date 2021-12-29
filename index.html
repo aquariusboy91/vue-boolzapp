@@ -68,10 +68,18 @@
             </div>
             <div class="main-chat" :style="bgchat" class="chat-bg">
                 
-                <div v-for="message in contacts[indexA].messages" class="flex-chat">
-                    <div :class="( message.status == 'sent') ? 'sent' : 'received'">
+                <div v-for="(message,index) in contacts[indexA].messages" class="flex-chat" @click="dropdown(index)">
+                    <div :class="( message.status == 'sent') ? 'sent' : 'received'" >
+                         <i class="fas fa-chevron-down arrow-down"></i>
+                         <div class="dropdown-menu" v-bind:class="{show: drop_visible}">
+                             <ul class="list-dropdown">
+                                 <li class="dropdown-items">Info</li>
+                                 <li class="dropdown-items">Delete</li>
+                             </ul>
+                         </div>
                          <span class="span-contact">{{message.text}}</span>
                          <span class="span-data">{{message.date}}</span>
+                         
                     </div>
                 </div>
                
