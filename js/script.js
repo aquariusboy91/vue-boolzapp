@@ -49,7 +49,6 @@
       indexB: '',
       textInput: '',
       search: '',
-      drop_visible: false,
       contacts: [
         {
           name: "Michele",
@@ -60,16 +59,19 @@
               date: "10/01/2020 15:30:55",
               text: "Hai portato a spasso il cane?",
               status: "sent",
+              drop_visible: false,
             },
             {
               date: "10/01/2020 15:50:00",
               text: "Ricordati di dargli da mangiare",
               status: "sent",
+              drop_visible: false,
             },
             {
               date: "10/01/2020 16:15:22",
               text: "Tutto fatto!",
               status: "received",
+              drop_visible: false,
             },
           ],
         },
@@ -168,7 +170,12 @@
     dropdown: function(index){
       this.indexB = index;
       console.log(this.indexB)
-      this.drop_visible= !this.drop_visible;
+      this.contacts[this.indexA].messages[index].drop_visible = !this.contacts[this.indexA].messages[index].drop_visible;
+      console.log(this.contacts[this.indexA].messages[index].drop_visible)
+    },
+    remove: function() {
+      this.contacts[this.indexA].messages.splice(this.indexB,1)
+      console.log(this.contacts[this.indexA].messages)
     }
 
     }
